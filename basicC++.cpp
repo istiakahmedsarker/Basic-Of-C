@@ -28,18 +28,50 @@ int main()
     // {
     //     cout << "You are not an adult";
     // }
-    std::string fruit;
-    std::cin >> fruit;
+    // std::string fruit;
+    // std::cin >> fruit;
 
-    if (fruit == "Mango") {
-        std::cout << "King of fruits" << std::endl;
-    } else if (fruit == "Apple") {
-        std::cout << "A sweet red fruit" << std::endl;
-    } else if (fruit == "Orange") {
-        std::cout << "Round fruit" << std::endl;
-    } else {
-        std::cout << "Enter a valid fruit" << std::endl;
+    // if (fruit == "Mango") {
+    //     std::cout << "King of fruits" << std::endl;
+    // } else if (fruit == "Apple") {
+    //     std::cout << "A sweet red fruit" << std::endl;
+    // } else if (fruit == "Orange") {
+    //     std::cout << "Round fruit" << std::endl;
+    // } else {
+    //     std::cout << "Enter a valid fruit" << std::endl;
+    // }
+
+    int empId;
+    std::string department;
+
+    std::cin >> empId;
+    std::cin >> department;
+
+    switch (empId) {
+        case 1:
+            std::cout << "Hey Istiak" << std::endl;
+            break;
+        case 2:
+            std::cout << "Hey Mahi" << std::endl;
+            break;
+        case 3: {
+            std::cout << "Hey Lazy" << std::endl;
+            switch (department[0]) {
+                case 'I':
+                    std::cout << "Hey IT" << std::endl;
+                    break;
+                case 'M':
+                    std::cout << "Hey Manager" << std::endl;
+                    break;
+                default:
+                    std::cout << "No department" << std::endl;
+            }
+            break;
+        }
+        default:
+            std::cout << "No empID" << std::endl;
     }
+
 
     return 0;
 }
