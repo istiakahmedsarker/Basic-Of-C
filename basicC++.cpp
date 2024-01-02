@@ -1,17 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     // long x =15;
     // long long x =20000000000000;
 
-    float x = 5.6;
-    float y = 5;
+    // float x = 5.6;
+    // float y = 5;
 
-    string s = "Hey bro";
-    string str;
+    // string s = "Hey bro";
+    // string str;
     // char ch = 'g;
-    getline(cin,str);
+    // getline(cin,str);
 
-    cout << x;
+    int age;
+    cin >> age;
+
+    if (age >= 18)
+    {
+        cout << "You are an adult";
+    }
+    else
+    {
+        cout << "You are not an adult";
+    }
 }
