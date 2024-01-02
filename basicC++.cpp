@@ -14,18 +14,32 @@ int main()
     // char ch = 'g;
     // getline(cin,str);
 
-    int age;
-    cin >> age;
+    // int age;
+    // cin >> age;
 
-    if (age >= 18)
-    {
-        cout << "You are an adult";
-        if(age <= 15){
-            cout << "You can't  drive";
-        }
+    // if (age >= 18)
+    // {
+    //     cout << "You are an adult";
+    //     if(age <= 15){
+    //         cout << "You can't  drive";
+    //     }
+    // }
+    // else
+    // {
+    //     cout << "You are not an adult";
+    // }
+    std::string fruit;
+    std::cin >> fruit;
+
+    if (fruit == "Mango") {
+        std::cout << "King of fruits" << std::endl;
+    } else if (fruit == "Apple") {
+        std::cout << "A sweet red fruit" << std::endl;
+    } else if (fruit == "Orange") {
+        std::cout << "Round fruit" << std::endl;
+    } else {
+        std::cout << "Enter a valid fruit" << std::endl;
     }
-    else
-    {
-        cout << "You are not an adult";
-    }
+
+    return 0;
 }
