@@ -20,6 +20,9 @@ int main()
     if (age >= 18)
     {
         cout << "You are an adult";
+        if(age <= 15){
+            cout << "You can't  drive";
+        }
     }
     else
     {
