@@ -73,21 +73,6 @@ int main()
     // }
 
     // Initializing individual elements
-    numbers[0] = 10;
-    numbers[1] = 20;
-    // ...
-
-    // Initializing during declaration
-    int otherNumbers[] = {5, 15, 25, 35}; // Compiler infers size
-
-    // Initializing all elements to a specific value
-    int allZeros[10] = {0}; // Initializes all elements to 0
-    // Syntax: data_type array_name[row_size][column_size];
-int matrix[3][3]; // Example 3x3 matrix
-
-// Initializing a 2D array
-int grid[2][3] = {{1, 2, 3}, {4, 5, 6}};
-
-
+    
     return 0;
 }
